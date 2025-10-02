@@ -1,128 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MyBrand – Apple Style Page</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="framer-motion.umd.js"></script>
-<style>
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waalbocht – Craft beer uit Nijmegen</title>
+  <script src="js/tailwind.js"></script>
+  <script src="framer-motion.umd.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="bg-white text-gray-900 antialiased">
 <!-- Header -->
-<header class="backdrop-blur-sm bg-white/70 sticky top-0 z-40 border-b border-gray-100">
-<div class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
-<div class="flex items-center gap-6">
-<div class="text-2xl font-semibold">MyBrand</div>
-<nav class="hidden md:flex items-center gap-6 text-sm text-gray-700">
-<a href="#" class="hover:underline">Store</a>
-<a href="#products" class="hover:underline">Products</a>
-<a href="#features" class="hover:underline">Features</a>
-<a href="#support" class="hover:underline">Support</a>
-</nav>
-</div>
-<div class="flex items-center gap-4">
-<button class="hidden md:inline-flex items-center px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition">Sign In</button>
-<button class="inline-flex items-center px-4 py-2 rounded-md bg-slate-900 text-white text-sm font-medium shadow-sm hover:scale-105 transition">Buy</button>
-</div>
+  <header class="backdrop-blur-sm bg-white/70 sticky top-0 z-40 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
+    <div class="flex items-center gap-6">
+      <img src="/assets/waalbocht_logo_black@2x.png" alt="Waalbocht Logo" class="mx-auto mb-8 w-48 h-auto md:w-64 mt-5" />
+      <nav class="hidden md:flex items-center gap-6 text-md text-gray-700">
+        <a href="#beers">Bieren</a>
+        <a href="#recipe">Recepten</a>
+        <a href="#brew">Brouwen</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <!-- <button class="hidden md:inline-flex items-center px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition">Sign In</button> -->
+      <!-- <button class="inline-flex items-center px-4 py-2 rounded-md bg-slate-900 text-white text-sm font-medium shadow-sm hover:scale-105 transition">Proeven</button> -->
+      <a href="#contact" class="inline-flex items-center justify-center rounded-md px-4 py-2 bg-slate-900 text-white font-medium shadow hover:scale-105 transition">Nu proeven</a>
+    </div>
 </div>
 </header>
 
-<!-- Hero -->
-<section class="relative overflow-hidden">
-<div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="motion-safe:animate-fadeInUp">
-<p class="uppercase text-sm tracking-wide text-gray-500">Introducing</p>
-<h1 class="mt-3 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">The New Slate — Designed to inspire.</h1>
-<p class="mt-5 text-lg text-gray-600 max-w-xl">A thin, powerful device with stunning display and all-day battery life. Built for creativity, productivity and everything in between.</p>
-<div class="mt-8 flex flex-col sm:flex-row gap-3">
-<a href="#buy" class="inline-flex items-center justify-center rounded-md px-6 py-3 bg-slate-900 text-white font-medium shadow hover:scale-105 transition">Buy</a>
-<a href="#learn" class="inline-flex items-center justify-center rounded-md px-6 py-3 border border-gray-200 text-sm text-gray-800 hover:bg-gray-50 transition">Learn more</a>
-</div>
-<ul class="mt-8 flex flex-wrap gap-6 text-sm text-gray-500">
-<li>From €799</li>
-<li>Available now</li>
-</ul>
-</div>
-<div class="relative motion-safe:animate-fadeIn">
-<div class="mx-auto max-w-md lg:max-w-none lg:ml-auto rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition">
-<img src="assets/product-hero.jpg" alt="product" class="w-full h-[320px] sm:h-[420px] object-cover" />
-</div>
-<div class="pointer-events-none absolute -right-24 -bottom-24 w-72 h-72 rounded-full bg-gradient-to-br from-sky-100 to-indigo-50 opacity-60 blur-3xl"></div>
-</div>
-</div>
+<!-- Unieke bieren -->
+<section id="beers" class="relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div class="motion-safe:animate-fadeInUp">
+      <p class="uppercase text-sm tracking-wide text-gray-400 font-bangers">Unieke bieren</p>
+      <h1 class="mt-3 text-4xl sm:text-5xl lg:text-6xl leading-tight">Wees er snel bij</h1>
+      <p class="mt-4 text-md text-gray-600 max-w-xl">Onze bieren zijn nooit hetzelfde en precies dát maakt ze zo bijzonder. Elke batch is met de hand gebrouwen, in beperkte oplage, met smaken die je nergens anders vindt. Als het op is, is het écht op. Geen standaard assortiment, geen tweede kans. Alleen het moment om iets unieks te proeven.</p>
+      <p class="mt-4 text-md text-gray-600 max-w-xl">Wil je niets missen? Dan moet je er snel bij zijn. Onze releases verdwijnen vaak sneller dan je denkt. Zodra een nieuwe creatie beschikbaar komt, is het jouw kans om een exemplaar te bemachtigen en deel uit te maken van een selecte groep die dit bier ooit zal proeven. Mis het niet.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="#contact" class="inline-flex items-center justify-center rounded-md px-6 py-3 bg-slate-900 text-white font-medium shadow hover:scale-105 transition">Nu proeven</a>
+        <!-- <a href="#learn" class="inline-flex items-center justify-center rounded-md px-6 py-3 border border-gray-200 text-sm text-gray-800 hover:bg-gray-50 transition">Nieuwe uitgaven</a> -->
+      </div>
+    </div>
+    <div class="relative motion-safe:animate-fadeIn">
+      <div class="mx-auto max-w-md lg:max-w-none lg:ml-auto rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition">
+      <img src="assets/wp_sunset.jpg" alt="Witte Panter - sunset" class="w-full h-[320px] sm:h-[420px] object-cover" />
+      </div>
+      <div class="pointer-events-none absolute -right-24 -bottom-24 w-72 h-72 rounded-full bg-gradient-to-br from-sky-100 to-indigo-50 opacity-60 blur-3xl"></div>
+    </div>
+  </div>
 </section>
 
-<!-- Product strip -->
-<section id="products" class="py-12 border-t border-gray-100">
-<div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-<article class="rounded-2xl border border-gray-100 p-5 bg-white shadow-sm hover:shadow-md transition motion-safe:animate-fadeInUp">
-<div class="aspect-[4/3] rounded-lg overflow-hidden">
-<img src="assets/product1.jpg" alt="Slate 11" class="w-full h-full object-cover" />
-</div>
-<h3 class="mt-4 text-lg font-semibold">Slate 11</h3>
-<p class="text-sm text-gray-500">11-inch Liquid Retina</p>
-<div class="mt-4 flex items-center justify-between">
-<div class="text-sm text-gray-700">From €799</div>
-<a href="#buy" class="text-sm font-medium text-slate-900">Buy</a>
-</div>
-</article>
-
-<article class="rounded-2xl border border-gray-100 p-5 bg-white shadow-sm hover:shadow-md transition motion-safe:animate-fadeInUp delay-150">
-<div class="aspect-[4/3] rounded-lg overflow-hidden">
-<img src="assets/product2.jpg" alt="Slate 13" class="w-full h-full object-cover" />
-</div>
-<h3 class="mt-4 text-lg font-semibold">Slate 13</h3>
-<p class="text-sm text-gray-500">13-inch Pro Display</p>
-<div class="mt-4 flex items-center justify-between">
-<div class="text-sm text-gray-700">From €999</div>
-<a href="#buy" class="text-sm font-medium text-slate-900">Buy</a>
-</div>
-</article>
-
-<article class="rounded-2xl border border-gray-100 p-5 bg-white shadow-sm hover:shadow-md transition motion-safe:animate-fadeInUp delay-300">
-<div class="aspect-[4/3] rounded-lg overflow-hidden">
-<img src="assets/product3.jpg" alt="Slate Mini" class="w-full h-full object-cover" />
-</div>
-<h3 class="mt-4 text-lg font-semibold">Slate Mini</h3>
-<p class="text-sm text-gray-500">Compact & Powerful</p>
-<div class="mt-4 flex items-center justify-between">
-<div class="text-sm text-gray-700">From €499</div>
-<a href="#buy" class="text-sm font-medium text-slate-900">Buy</a>
-</div>
-</article>
-</div>
+<!-- Het brouwproces -->
+<section id="recipe" class="relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+  <div class="relative motion-safe:animate-fadeIn">
+    <div class="mx-auto max-w-md lg:max-w-none lg:ml-auto rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition grid grid-cols-2 gap-0">
+      <img src="assets/design_grain.jpg" alt="Ingredienten - Mout" class="w-full h-[160px] sm:h-[210px] object-cover" />
+      <img src="assets/design_maatglas.jpg" alt="Maatglas" class="w-full h-[160px] sm:h-[210px] object-cover" />
+      <img src="assets/design_hop.jpg" alt="Ingredienten - Hop" class="w-full h-[160px] sm:h-[210px] object-cover" />
+      <img src="assets/design_tryout_box.jpg" alt="Waalbocht - boxset test bieren" class="w-full h-[160px] sm:h-[210px] object-cover" />
+    </div>
+  </div>
+  <div class="motion-safe:animate-fadeInUp">
+    <p class="uppercase text-sm tracking-wide text-gray-400 font-bangers">Meesterlijke creaties</p>
+    <h1 class="mt-3 text-4xl sm:text-5xl lg:text-6xl leading-tight">Ambacht</h1>
+    <p class="mt-4 text-md text-gray-600 max-w-xl">Het ontwikkelen van nieuwe bieren is een ambachtelijke kunst, waarbij elke stap wordt uitgevoerd met de grootste zorg en precisie. Onze brouwers selecteren de beste ingrediënten en experimenteren met smaakprofielen om een perfecte balans te creëren. Elke nieuwe creatie is een meesterwerk van smaak en aroma, waarbij passie en vakmanschap samenkomen om een unieke smaakervaring te bieden.</p>
+    <p class="mt-4 text-md text-gray-600 max-w-xl">Met een verfijnd proces en een scherpe focus op kwaliteit, streven onze brouwers naar perfectie. Ze zijn constant op zoek naar nieuwe manieren om de smaak en textuur van onze bieren te verfijnen, altijd met het oog op de hoogste standaarden.</p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-3">
+      <a href="#contact" class="inline-flex items-center justify-center rounded-md px-6 py-3 bg-slate-900 text-white font-medium shadow hover:scale-105 transition">Nu proeven</a>
+      <!-- <a href="#learn" class="inline-flex items-center justify-center rounded-md px-6 py-3 border border-gray-200 text-sm text-gray-800 hover:bg-gray-50 transition">Nieuwe uitgaven</a> -->
+    </div>
+  </div>
 </section>
 
-<!-- Features -->
-<section id="features" class="py-20">
-<div class="max-w-6xl mx-auto px-4 sm:px-6">
-<h2 class="text-3xl font-bold">Powerful tools for every day</h2>
-<p class="mt-3 text-gray-600 max-w-2xl">Lightweight performance, pro-level cameras and long battery life — built to help you create and do more.</p>
-<div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="space-y-3 motion-safe:animate-fadeInUp">
-<div class="text-4xl font-extrabold">M1</div>
-<h4 class="text-lg font-semibold">Blazing performance</h4>
-<p class="text-gray-600">Fast CPU and GPU for editing, gaming and multitasking without compromise.</p>
-</div>
-<div class="space-y-3 motion-safe:animate-fadeInUp delay-150">
-<div class="text-4xl font-extrabold">12h</div>
-<h4 class="text-lg font-semibold">All-day battery</h4>
-<p class="text-gray-600">Work, stream and play with a full day of battery life.</p>
-</div>
-<div class="space-y-3 motion-safe:animate-fadeInUp delay-300">
-<div class="text-4xl font-extrabold">Liquid</div>
-<h4 class="text-lg font-semibold">Stunning display</h4>
-<p class="text-gray-600">Colors that pop, high brightness and precise color accuracy for creative work.</p>
-</div>
-</div>
-</div>
+<!-- Contact -->
+<section id="brew" class="py-20">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
+  <div class="motion-safe:animate-fadeInUp">
+    <p class="uppercase text-sm tracking-wide text-gray-400 font-bangers">Bier op maat</p>
+    <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl leading-tight">Je eigen unieke bier</h1>
+    <p class="mt-4 text-md text-gray-600 max-w-6xl">Bij onze bierbrouwerij geloven we in het creëren van unieke en exclusieve bieren. Dit doen we ook graag voor jou. Of je nu een bedrijf bent dat iets te vieren heeft of een café dat een eigen bier op de tap wil hebben, wij bieden u de mogelijkheid om een bier te creëren dat helemaal bij jou past.</p>
+    <p class="mt-4 text-md text-gray-600 max-w-6xl">Met een verfijnd proces en een scherpe focus op kwaliteit, streven onze brouwers naar perfectie. Ze zijn constant op zoek naar nieuwe manieren om de smaak en textuur van onze bieren te verfijnen, altijd met het oog op de hoogste standaarden.</p>
+      <img src="assets/create-proces.png" alt="Creatie proces" class="sm:h-[210px] object-cover mx-auto block" />
+    <div class="mt-8 flex flex-col sm:flex-row gap-3">
+      <a href="#contact" class="inline-flex items-center justify-center rounded-md px-6 py-3 bg-slate-900 text-white font-medium shadow hover:scale-105 transition">Neem contact op</a>
+      <!-- <a href="#learn" class="inline-flex items-center justify-center rounded-md px-6 py-3 border border-gray-200 text-sm text-gray-800 hover:bg-gray-50 transition">Nieuwe uitgaven</a> -->
+    </div>
+  </div>
+  <div class="relative motion-safe:animate-fadeIn">
+    <div class="mx-none max-w-md lg:max-w-none lg:ml-none rounded-3xl overflow-hidden transform shadow-2xl hover:scale-[1.02] transition grid grid-cols-1 gap-0">
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <p class="uppercase text-sm tracking-wide text-gray-400 font-bangers">Contact</p>
+    <h1 class="mt-3 text-4xl sm:text-5xl lg:text-6xl leading-tight">Waalbocht proeven</h1>
+    <p class="mt-3 text-gray-600 max-w-6xl">Je wilt graag één van de lekkere waalbocht bieren proberen. Dat snappen we!</p>
+    
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div class="space-y-3 motion-safe:animate-fadeInUp">
+        <!-- <h4 class="text-lg font-bangers text-center">Instagram</h4> -->
+        <div class="mx-auto max-w-md lg:max-w-none lg:ml-auto rounded-3xl overflow-hidden transform hover:scale-[1.02] transition">
+          <a href="https://instagram.com/waalbocht" target="_blank"><img src="assets/instagram-logo.png" alt="Instagram" class="w-[90px] mx-auto block sm:mt-7" /></a>
+          </div>
+        <p class="text-gray-600 text-center">Volg of contact ons op <b>Instagram</b> en zie direct zodra er weer een nieuwe editie beschikbaar is.</p>
+      </div>
+      
+      <div class="space-y-3 motion-safe:animate-fadeInUp delay-150">
+        <!-- <h4 class="text-lg font-bangers text-center">Wunderkammer</h4> -->
+        <div class="mx-auto max-w-md lg:max-w-none lg:ml-auto rounded-3xl overflow-hidden transform hover:scale-[1.02] transition">
+          <a href="https://www.cafewunderkammer.nl" target="_blank"><img src="assets/wunderkammer-logo.png" alt="Café Wunderkammer" class="w-[195px] h-[118px] mx-auto block" /></a>
+          </div>
+        <p class="text-gray-600 text-center"><b>Café Wunderkammer</b> in Nijmegen is de grootste kans om een Waalbocht bier in het wild tegen te komen.</p>
+      </div>
+      <div class="space-y-3 motion-safe:animate-fadeInUp delay-300">
+        <!-- <h4 class="text-lg font-bangers text-center">Untapped</h4> -->
+        <div class="mx-auto max-w-md lg:max-w-none lg:ml-auto rounded-3xl overflow-hidden transform hover:scale-[1.02] transition">
+          <a href="https://untappd.com/waalbocht" target="_blank"><img src="assets/untappd-logo.png" alt="Untappd" class="w-[90px] mx-auto block sm:mt-7" /></a>
+          </div>
+        <p class="text-gray-600 text-center"><b>Untappd</b>. Leuk om de ervaringen van andere specialbierliefhebbers volgen. Deel meteen jouw ervaring!</p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- CTA band -->
-<section class="py-12 bg-gradient-to-r from-slate-50 to-white border-y border-gray-100 motion-safe:animate-fadeIn">
+<!-- <section class="py-12 bg-gradient-to-r from-slate-50 to-white border-y border-gray-100 motion-safe:animate-fadeIn">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
 <div>
 <h3 class="text-xl font-semibold">Get the Slate</h3>
@@ -133,24 +142,21 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 <a href="#find" class="inline-flex items-center px-5 py-3 rounded-md border border-gray-200 hover:bg-gray-50 transition">Find a store</a>
 </div>
 </div>
-</section>
+</section> -->
 
 <!-- Footer -->
 <footer id="support" class="mt-12 border-t border-gray-100 bg-white py-10">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 text-sm text-gray-600 grid grid-cols-1 md:grid-cols-3 gap-6">
-<div>
-<div class="font-semibold text-gray-900">MyBrand</div>
-<p class="mt-2">© <script>document.write(new Date().getFullYear())</script> MyBrand. All rights reserved.</p>
-</div>
-<div class="flex flex-col gap-2">
-<a href="#" class="hover:underline">Contact</a>
-<a href="#" class="hover:underline">Terms</a>
-<a href="#" class="hover:underline">Privacy</a>
-</div>
-<div class="text-right md:text-left">
-<p>Language: English</p>
-</div>
-</div>
+  <div>
+    <img src="/assets/waalbocht_logo_black@2x.png" alt="Waalbocht Logo" class="mx-auto mb-8 w-48 h-auto md:w-64 mt-5" />
+      <p class="mt-2">© <script>document.write(new Date().getFullYear())</script> Waalbocht. All rights reserved.</p>
+    </div>
+    <div class="flex flex-col gap-2">
+      <a href="#contact" class="hover:underline">Contact</a>
+      <!-- <a href="#" class="hover:underline">Terms</a>
+      <a href="#" class="hover:underline">Privacy</a> -->
+    </div>
+  </div>
 </footer>
 
 <!-- Simple fadeIn animations -->
@@ -164,3 +170,46 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 </body>
 </html>
 
+
+<!-- Age Verification Modal -->
+<div id="age-modal" class="fixed bg-orange-modal inset-0 bg-modal flex items-center justify-center z-50">
+  <div class="bg-white rounded-2xl p-8 max-w-md text-center shadow-xl animate-fadeIn">
+    <img src="/assets/waalbocht_logo_black@2x.png" alt="Waalbocht Logo" class="mx-auto mb-8 w-64 h-auto" />
+    <h2 class="text-2xl font-bold mb-4">Leeftijd check</h2>
+    <p class="text-gray-600 mb-6">Craftbeer, je moet er klaar voor zijn.<br>Ben je 18+? Dan is het tijd om kennis te maken!</p>
+    <div class="flex gap-4 justify-center">
+      <button id="btn-yes" class="px-6 py-2 bg-slate-900 text-white rounded-lg hover:scale-105 transition">
+        Ik ben 18+
+      </button>
+      <button id="btn-no" class="px-6 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 transition">
+        Ik kom later terug
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById("age-modal");
+  const yesBtn = document.getElementById("btn-yes");
+  const noBtn = document.getElementById("btn-no");
+
+  // Check localStorage
+  if (localStorage.getItem("ageVerified") === "true") {
+    modal.style.display = "none";
+  }
+
+  yesBtn.addEventListener("click", () => {
+    localStorage.setItem("ageVerified", "true");
+    modal.style.display = "none";
+  });
+
+  noBtn.addEventListener("click", () => {
+    window.location.href = "https://www.efteling.nl"; // redirect underage visitors
+  });
+</script>
+
+<!-- FadeIn animation -->
+<style>
+  @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+  .animate-fadeIn { animation: fadeIn 0.5s ease-out; }
+</style>
